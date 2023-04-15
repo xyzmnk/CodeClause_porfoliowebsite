@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+         <meta name="viewport" ="width=device-width,initial-scale=1.0">
+         <title>Manika</title>
+         <link rel="stylesheet" href="style.css">
+         <script src="https://kit.fontawesome.com/002556a67f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Certificates</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div style="color:aliceblue" class="header-text">
+        
+                <h1>Hello,
+                    <br>I'm Manika Arunkumar.</h1>
+                    <h8>I am a computer engineering student.</h8> 
+                <h2></h2>
+            </div>
+            </div>
+        </div>
+        <!---abt-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="abtcol1">
+                        <img src="about.jpg" >
+                    </div>
+                    <div class="abtcol2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I am currently pursuing computer engineering and am passionate about coding and problem solving.A fast learner 
+                            with strong time management and multitasking skills.Throughout my academic career, I have completed various 
+                            projects, internships, and extracurricular activities that have helped me develop my skills and experiences 
+                            in computer engineering.</p>
+                        <div class="tab-titles">
+                          <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                          <p class="tab-links "onclick="opentab('Skills')">Skills</p>  
+                        </div>  
+                        <div class="tab-contents active-tab" id="Education">
+                            2021-2024<br>
+                            Bachelor in Engineering<br>
+                            St. Francis Institute of Technology<br><br>
+                            Diploma in Computer Science<br>
+                            Thakur Polytechnic ,Result-94.69%<br>
+                            2018-2021<br><br>
+                                St. Joseph's School,Result-87%<br>
+                                2008-2018<br>
+                              <br>
+                        </div>
+                        <div class="tab-contents" id="Skills">
+                        
+                        <li>HTML & CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Java</li> 
+                        <li>DataStructures</li> 
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Experience & Certificates</h1>
+                <div class="service-list">
+                    <div>
+                        
+                        <i class="fa-sharp fa-solid fa-code fa-fade" style="color: #000000;"></i>
+                        <h2>Web Development Intern at Nibodh Educare </h2>
+                        <p style="color: aliceblue;">April 2020- May2020</p>
+                         <a href="https://in.linkedin.com/company/nibodh">learn more</a>  
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-right fa-fade" style="color: #000000;"></i>
+                      <br>
+                        <h2>Paper Published</h2>
+                            <p>Published a paper on Music Player - Using Python Volume 9, Issue 5, pp: 35-37(IJRES)</p>
+                         <a href="https://www.ijres.org/papers/Volume-9/Issue-5/Ser-7/G09053537.pdf">learn more</a>  
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-chevron-right fa-fade" style="color: #000000;"></i>
+                        <h2>Course on "Web Designing with React"</h2>
+                            <p>Completed a 30 hr value added course on "Web Designing with React"</p>
+                         <a href="#">learn more</a>  
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--contact-->
+        <div id="Contact">
+            <div class="container">
+                <h1 class="sub-title">Contact<br>
+                    <br></h1>
+              <div class="social-icons">
+                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin fa-fade"></i></a>
+                <a href="https://www.codechef.com/"><i class="fa-solid fa-code fa-fade"></i></a>
+                <a href="https://github.com/login"><i class="fa-brands fa-github fa-fade" style="color: #ff0000;"></i></a>
+              </div>
+              <i class="fa-solid fa-envelope fa-fade" style="color: #ff1919;"></i><h3>mnk@gmail.com</h3>
+             <a href="m.html" download ><br>Download Résumé</a>    
+            </div>
+        </div>
+        
+<script>
+var tablinks= document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+</script>
+    </body>
+</html>
